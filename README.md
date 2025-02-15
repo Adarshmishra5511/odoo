@@ -16,11 +16,10 @@
 - Step2:- then I created one module inventory_management.
 - Step3:- then i created _manifest.py and __init_.py file .
 - Step4:- after that I created model directory where I define _init_.py , product_template.py ,stock_location.py,stock_quant.py.
-  
-        _init_.py:- i import all models  
-        Product_template.py:- here I inherited product.template and define two field(batch number and expiry_date)  
-        Stock_location.py:- here I inherited stock.location and define one field(auto_adjust_stock)  
-        Stock_quant.py:- here I inherited stock.quant and define one function which adjust the stock   
+     &nbsp;&nbsp;&nbsp;   _init_.py:- i import all models  
+     &nbsp;&nbsp;&nbsp;   Product_template.py:- here I inherited product.template and define two field(batch number and expiry_date)  
+      &nbsp;&nbsp;&nbsp;    Stock_location.py:- here I inherited stock.location and define one field(auto_adjust_stock)  
+      &nbsp;&nbsp;&nbsp;   Stock_quant.py:- here I inherited stock.quant and define one function which adjust the stock   
 
 - Step5:- I created views directory and define all views by using inherit_id and xpath.
 - Step6:- i created data directory and there I define scheduler that will run every day based on function define on stock_quant.py and also define adjust stock for expiry scheduler.
