@@ -1,0 +1,20 @@
+{
+    'name': 'Inventory Enhancement',
+    'version': '18.0.1.0.0',
+    'summary': 'Enhancements for product inventory management with batch and expiry dates',
+    'category': 'Inventory',
+    'author': 'Adarsh Mishra',
+    'website': '',
+    'depends': ['stock', 'product'],
+    'data': [
+        'security/ir.model.access.csv',
+        'views/product_template_views.xml',
+        'views/stock_location_views.xml',
+        'views/auto_adjust_stock_views.xml',
+        'data/automated_actions.xml',
+        'reports/product_expiry_report.xml',
+    ],
+    'installable': True,
+    'application': False,
+    'auto_install': False,
+}

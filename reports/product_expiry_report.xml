@@ -1,0 +1,10 @@
+<odoo>
+    <report
+        id="product_expiry_report"
+        model="product.template"
+        string="Product Expiry Report"
+        report_type="qweb-pdf"
+        name="inventory_enhancement.product_expiry_report_template"
+        file="inventory_enhancement.product_expiry_report_template"
+    />
+</odoo>

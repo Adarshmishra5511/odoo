@@ -1,0 +1,4 @@
+<odoo>
+    <menuitem id="inventory_enhancement_menu" name="Inventory Enhancements" parent="stock.menu_stock_inventory" />
+    <menuitem id="auto_adjust_stock_settings" name="Auto Adjust Stock Settings" parent="inventory_enhancement_menu" action="action_auto_adjust_stock_settings" />
+</odoo>

@@ -1,0 +1,19 @@
+<odoo>
+    <record id="ir_cron_check_expiry" model="ir.cron">
+        <field name="name">Check Expiry Date and Adjust Stock</field>
+        <field name="model_id" ref="model_stock_quant"/>
+        <field name="state">code</field>
+        <field name="code">inventory_enhancements.check_expiry_and_adjust_stock()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="active" eval="True"/>
+    </record>
+
+    <record id="auto_adjust_stock_action" model="base.automation">
+        <field name="name">Auto Adjust Stock for Expiry</field>
+        <field name="model_id" ref="model_stock_quant"/>
+        <field name="trigger">on_time</field>
+        <field name="code">model.check_expiry_and_adjust_stock()</field>
+    </record>
+</odoo>
+
